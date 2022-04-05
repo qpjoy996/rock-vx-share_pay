@@ -5,14 +5,14 @@
       <div class="item-info">
         <h2 class="item-title">活动说明</h2>
         <ul class="item-ul">
-          <li class="item-li">1、欢迎来到慕课支付专项课程</li>
-          <li class="item-li">2、本课程专门针对大家对微信SDK使用的痛点进行讲解</li>
-          <li class="item-li">3、从公众号创建，微信支付申请到代码编写手把手教大家使用相关API功能</li>
-          <li class="item-li">4、课程最大的难点在于开发流程的理解和签名算法的生成</li>
-          <li class="item-li">5、此课程通过几个页面将支付和分享相关业务串联起来让大家彻底熟悉微信支付功能</li>
+          <li class="item-li">1、欢迎来到3D大侦探</li>
+          <li class="item-li">2、本游戏超级好玩</li>
+          <li class="item-li">3、从小白到大牛，一对一小姐姐&大哥哥线上教学</li>
+          <li class="item-li">4、最大的难点在于每次通关过后，惊喜的发现剧情原来这样</li>
+          <li class="item-li">5、此游戏老少咸宜，欢迎广大同学在线试玩</li>
         </ul>
       </div>
-      <p class="tip">在法律范围允许范围内，本课程最终版权归慕课所有</p>
+      <p class="tip">本测试url为demo，如有侵权，请联系删除！</p>
     </div>
   </div>
 </template>
