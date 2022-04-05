@@ -1,4 +1,4 @@
-# imooc_pay_share
+# 3d_big_detective
 
 ## Project setup
 ```

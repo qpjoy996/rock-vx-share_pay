@@ -3,7 +3,7 @@
  */
 let MongoClient = require('mongodb').MongoClient;
 let util = require('./../../util/util')
-let url = "mongodb://127.0.0.1:27017/imooc_pay"
+let url = "mongodb://admin:pass@localhost:27017/imooc_pay?authSource=admin"
 console.log(`[In mongoClient]: ${process.NODE_ENV}`);
 
 // 查询数据
@@ -38,7 +38,7 @@ exports.insert = function (data, table) {
 }
 // 数据库连接
 function connect(callbck){
-  MongoClient.connect(url,function (err,db) {
+  MongoClient.connect(url, { useNewUrlParser: true }, function (err,db) {
     console.log(`[MongoClient]: connecting`);
     if(err) throw err;
     console.log(`[MongoClient]: connected`);
