@@ -1,7 +1,7 @@
 module.exports = {
   devServer: {
     // 设置主机地址
-    host: 'm.51purse.com',
+    host: 'share.go4.so',
     // 设置默认端口
     port: 80,
     // 设置代理

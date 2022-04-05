@@ -2,7 +2,7 @@
   <div class="index">
     <img class="header" src="./../assets/images/header.png"/>
     <div class="btn-group">
-      <button class="btn">分享</button>
+      <button class="btn">分享1</button>
       <button class="btn btn-primary btn-pay">体验</button>
       <button class="btn">活动详情</button>
     </div>

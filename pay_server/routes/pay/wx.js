@@ -17,7 +17,8 @@ router.get('/test',function (req,res) {
 })
 // 用户授权重定向
 router.get('/redirect',function (req,res) {
-  let redirectUrl = req.query.url, scope = req.query.scope, callback = 'http://m.51purse.com/api/wechat/getOpenId';
+  let redirectUrl = req.query.url, scope = req.query.scope, callback = 'http://share.go4.so/api/wechat/getOpenId';
+  console.log(`[Redirect]: ${req.query}`);
   cache.put('redirectUrl', redirectUrl);
   let authorizeUrl = `https://open.weixin.qq.com/connect/oauth2/authorize?appid=${config.appId}&redirect_uri=${callback}&response_type=code&scope=${scope}&state=STATE#wechat_redirect`;
   res.redirect(authorizeUrl);
@@ -111,7 +112,7 @@ router.get('/pay/payWallet', function (req, res) {
   // 如果是post请求，则用req.body获取参数
   let total_fee = req.query.money;
   // 微信支付成功回调地址，用于保存用户支付订单信息
-  let notify_url = "http://m.51purse.com/api/wechat/pay/callback";
+  let notify_url = "http://share.go4.so/api/wechat/pay/callback";
   // 通过微信支付认证的商户ID
   let mch_id = config.mch_id;
   // 附加数据
